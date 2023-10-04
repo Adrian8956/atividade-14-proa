@@ -68,13 +68,16 @@ function exercicio4(){
     numero2 = parseFloat(numero2)
     numero3 = parseFloat(numero3)
 
-    if(numero1 > numero2 && numero1 > numero3){
+    if(numero1 > numero2 && numero1 > numero3 && numero2 > numero3){
         alert("A soma dos dois maiores é: " + (numero1 + numero2))
     }
-    else if(numero2 > numero1 && numero2 > numero3){
+    else if(numero1 > numero2 && numero1 > numero3 && numero2 < numero3){
+        alert("A soma dos dois maiores é: " + (numero1 + numero3))
+    }
+    else if(numero2 > numero1 && numero2 > numero3 && numero3 > numero1){
         alert("A soma dos dois maiores é: " + (numero2 + numero3))
     }
-    else if(numero3 > numero1 && numero3 > numero2){
+    else if(numero3 > numero1 && numero3 > numero2 && numero2 > numero1){
         alert("A soma dos dois maiores é: " + (numero3 + numero2))
     }
     else{
